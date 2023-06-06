@@ -1,0 +1,55 @@
+// footer
+.footer {    
+    background-color: $color-black;
+}
+
+.footer__inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link {
+    color: $color-white;    
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: underline;
+}
+
+.footer__social {
+
+}
+
+.footer__social-link {
+    color: $color-white;
+}
+
+.footer__social-link  + .footer__social-link {    
+    margin-left: 25px;    
+}
+
+.footer__social-img {
+
+}
+
+.footer__contacts {
+    color: $color-white;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__contacts-link {
+    color: $color-white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-link + .footer__contacts-link {
+    margin-top: 10px;
+}
+
+.footer__contacts-img {
+    margin-right: 10px;
+}

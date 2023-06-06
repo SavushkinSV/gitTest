@@ -1,0 +1,36 @@
+// Секция info
+.info {
+    padding: 50px 0 100px;   
+}
+
+.info__inner {  
+    display: flex;   
+}
+
+.info__img {
+    flex-basis: 570px;
+    object-fit: cover;    
+}
+
+.info__list {    
+    margin-left: 60px;
+    flex-basis: 490px;
+}
+
+.info__item + .info__item {
+    padding-top: 50px;
+}
+
+.info__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.info__item-text {
+    font-size: 14px;
+    line-height: 120%;
+    max-width: 450px;
+}

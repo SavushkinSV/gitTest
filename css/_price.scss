@@ -1,0 +1,136 @@
+// Секция price
+.price {
+    margin-bottom: 100px;
+}
+
+.price__inner {
+    position: relative;  
+}
+
+.form {
+    width: 420px;
+      
+}
+
+.form__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.form__text {
+    font-size: 14px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.form__input-name,
+.form__input-phone {
+    width: 100%;
+    border-bottom: 1px solid $color-black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;   
+}
+
+.form__input-name::placeholder,
+.form__input-phone::placeholder,
+.form__input-text {
+    color: $color-gray;
+    opacity: 0.5;
+}
+
+.form__label-box {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.form__label + .form__label {
+    margin-left: 23px;
+}
+
+.form__input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked + .form__bike {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form__bike {
+    display: none;
+}
+
+.form__bike-img {
+
+}
+
+.form__bike-price {
+    width: 220px;
+    height: 100px;
+    position: absolute;
+    font-size: 32px;    
+    top: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-red;
+    border-radius: 50%;
+    transform: translate(-50%);
+}
+
+.form__bike-price::after {
+    width: 220px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    border: 1px solid $color-red;
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+}
+
+.form__radio-style {
+    border-radius: 30px;
+    width: 80px;
+    height: 12px;
+}
+
+.form__radio-style--gray {
+    background: $color-gray;  
+}
+
+.form__radio-style--white {
+    background: $color-white;
+    border: 1px solid $color-gray;
+}
+
+.form__radio-style--red {
+    background: $color-red;
+}
+
+.form__btn {
+    background-color: $color-black;
+    color: $color-white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    padding: 28px 71px 28px 81px;
+    transition: all 0.3s; 
+    
+    &:hover {
+        background-color: $color-red;
+    }
+}
